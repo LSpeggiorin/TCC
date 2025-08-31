@@ -1,4 +1,4 @@
-The hyperparameter values for each algorithm used were as following:
+## The hyperparameter values for each algorithm used were as following:
 • KNN
 – n neighbors: 1:15
 – weights: ’uniform’, ’distance’
