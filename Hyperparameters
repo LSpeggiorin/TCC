@@ -1,0 +1,41 @@
+The hyperparameter values for each algorithm used were as following:
+• KNN
+– n neighbors: 1:15
+– weights: ’uniform’, ’distance’
+– leaf size: 20:40
+– p: 1, 2, 3
+– metric: ’minkowski’, ’chebyshev’
+• NB
+– var smoothing: 0:1 (in 0.01 intervals)
+• LR
+– C: logspace(-4, 2, 20)
+1https://github.com/LSpeggiorin/TCC
+– kernel: ’linear’, ’poly’, ’rbf’, ’sigmoid’
+– coef0: 1:11
+– shrinking: True, False
+• MLP
+– hidden layer sizes: (100,100,100), (50,100,50), (10,30,10)
+– solver: ’lbfgs’, ’sgd’, ’adam’
+– alpha: np.logspace(-5, -1, 15)
+– learning rate: ’constant’, ’invscaling’, ’adaptive’
+• RF
+– n estimators: 1:402 (in increments of 20)
+– max depth: 1:52 (in increments of 5)
+– min samples split: 5:25 (in increments of 5)
+– min samples leaf: 1, 5, 10, 15, 20, 25 ,30
+– criterion: ’gini’, ’entropy’
+– max features: ’sqrt’, ’log2’
+• XGB
+– n estimators: 1:201 (in increments of 5)
+– max depth: 0:16
+– min child weight: 1:16
+– gamma: 0:1 (in 0.01 intervals)
+– subsample: 0:1 (in 0.04 intervals)
+– colsample bytree: 0:1 (in 0.04 intervals)
+– objective: ’binary:logistic’, ’binary:logitraw’, ’binary:hinge’
+– learning rate: 0.005: 0.5 (in 0.005 intervals)
+• LGBM
+– boosting type: ’gbdt’, ’dart’, ’rf’
+– feature fraction: 0.05:0.95 (in 0.05 intervals)
+– learning rate: np.logspace(-4, 0, 15)
+– subsample: 0.05:1 (in 0.05 intervals)
